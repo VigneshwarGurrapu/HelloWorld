@@ -1,0 +1,11 @@
+<apex:page controller="CustomControllervsp1" tabStyle="Visualforce_Example__c">
+    <apex:form >
+        <apex:pageBlock title="Visualforce Example">
+            Name: <apex:inputField value="{!vsp.Name}"/>
+              Emp id: <apex:inputField value="{!vsp.Emp_id__c}"/>
+             Salary: <apex:inputField value="{!vsp.Salary__c}"/>
+            <apex:commandButton action="{!save}" value="save"/>
+             <apex:commandButton action="{!deleteit}" value="delete"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

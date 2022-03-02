@@ -1,0 +1,14 @@
+<apex:page standardController="Account" extensions="InputFileControllerExtension"> 
+<apex:messages /> 
+<apex:form id="theForm"> 
+    <apex:pageBlock >
+        <apex:pageBlockSection columns="2" showHeader="true" title="Personal Details" >
+            <apex:inputField value="{!Account.Name}" />
+        </apex:pageBlockSection>
+        <apex:pageBlockSection >
+            <apex:inputFile value="{!attachment.body}" filename="{!attachment.name}"/>
+            <apex:commandButton value="Upload and save" action="{!save}"/> 
+        </apex:pageBlockSection> 
+        </apex:pageBlock> 
+</apex:form> 
+</apex:page>
